@@ -9,6 +9,7 @@ const tweet = require("./routes/tweet");
 const feed = require("./routes/feed");
 
 const app = express();
+app.use(express.static(path.join(__dirname, 'build')));
 app.use(cors())
 app.use(bodyParser.json());
 app.use(express.static("public"));
