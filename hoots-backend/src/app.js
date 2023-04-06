@@ -9,11 +9,6 @@ const tweet = require("./routes/tweet");
 const feed = require("./routes/feed");
 
 const app = express();
-const router = express.Router();
-
-app.use(`/.netlify/functions/app`, router);
-
-app.use(express.static(path.join(__dirname, 'build')));
 app.use(cors())
 app.use(bodyParser.json());
 app.use(express.static("public"));
