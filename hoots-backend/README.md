@@ -18,3 +18,6 @@ Create `.env` file at the root of the project with the following contents:
 `npm install`
 
 `npm start`
+
+Backend is deployed - onrender.com
+Database being used - db4free.net
