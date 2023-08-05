@@ -53,7 +53,7 @@ module.exports = {
           [Op.notIn]: sequelize.literal(`(${following})`),
         },
       },
-      limit: 3,
+      limit: 5,
     });
     return res.status(200).json({ whoFollow });
   },
